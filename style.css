@@ -1,0 +1,299 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-selection: 20px;
+}
+
+/* utility */
+
+/* bcz banner ma bau small text che */
+.small-font{
+    font-size: 1rem;
+    font-weight: 700;
+
+}
+
+.container{
+    margin-inline: auto;
+    padding: var(--padding-inline-selection);
+    max-width: 1180px;
+    overflow: hidden;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+/* aa default color apde primary kiro che usually blue aave */
+.hover-links{
+    color: var(--primary-text-color);
+    transition: 0.2s ease-out;
+    /* aa transistion property che */
+}
+
+.hover-links:hover{
+    color: var(--accent-color);
+}
+
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    /* imp bcz pela anchor color different che */
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    /* x dir, y dir, amt of blur, color */
+    transition: 0.2s ease-out;
+    text-align: center;
+}
+
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+.secondary-button{
+    border: 1px solid var(--secondary-text-color);
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primary-text-color);
+    transition: 0.2s ease-out;
+}
+.secondary-button:hover{
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+
+/* neeeche ma font size default thodi
+nani hoi che atle thodi vadhare kairi che */
+
+body{
+    font-family: 'poppins', sans-serif;
+    color: var(--primary-text-color);
+}
+
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+    /* line height pan vadhairi che */
+}
+
+a{
+    text-decoration: none;
+    /* text dec ma je blue underline aave e no aave none 
+    karva thi */
+    display: inline;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+.banner-text{
+    text-align: center;
+    padding: 15px 30px;
+    color: white;
+}
+
+.top-banner{
+    background-color: #4fb3d4;
+    background-image: url(./assets/asset\ 32.png);
+    background-size: 300px;
+}
+
+/* nav bar */
+.main-nav{
+    justify-content: space-between;
+    /* margin-top: 20px; */
+}
+
+
+.company-logo img{
+    width: 200px;
+}
+
+/* .nav-links{
+    flex-basis: 730px;
+} */
+
+.nav-links ul{
+    justify-content: end;
+    gap: 50px;
+}
+
+.nav-toggle{
+    display: none;
+}
+
+/* header section */
+header{
+    padding: 50px var(--padding-inline-selection);
+}
+
+.header-section{
+    justify-content: center;
+    gap: 50px;
+}
+.header-right img{
+    width: 100%;
+}
+.header-left{
+    max-width: 40vw;
+}
+.header-left h1{
+    margin-top: 20px;    
+}
+.get-started-button{
+    margin-top: 20px;
+    position: relative;
+    top: 20px;
+}
+
+/* company section */
+
+.company-header{
+    text-align:  center;
+    margin-block: 30px;
+    /* margine blk ma top and bittom bei 
+    thai jae */
+    color: var(--primary-text-color);
+}
+
+.logos{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* responsive banava mate */
+}
+
+.logo{
+    height: 45px;
+}
+
+
+/* feature section */
+
+.feature-section{
+    padding: 80px var(--padding-inline-selection) 0;
+    background-repeat: no-repeat;
+    background-image: url(./assets/asset\ 34.svg);
+    background-position: center;
+}
+.feature-header{
+    text-align: center
+}
+
+
+/* ana thi button thoduk neeche kairu */
+.feature-header h2{
+    margin-bottom: 20px;
+}
+
+.feature-area{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.feature-card{
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    text-align: center;
+}
+
+/* big feature */
+
+.big-feature-section{
+    margin-top: 20px;
+}
+
+.big-feature-container{
+    gap: 30px;
+}
+
+.feature-image img{
+    width: 100%;
+}
+
+
+/* cta */
+
+.CTA-section{
+    gap: 30px;
+    justify-content: center;
+    padding: 180px var(--padding-inline-selection) 80px;
+    background-color: #183b54;
+}
+
+.cta-container{
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    color: white;
+
+}
+
+.CTA-section p{
+    color: white;
+}
+
+
+/* footer */
+
+footer{
+    padding-block: 80px;
+    background-color: #ebf2fa;
+}
+
+.link-column{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-container{
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* subfooter */
+.sub-footer{
+    background-color: #b9cde4;
+    padding: var(--padding-inline-selection);
+}
+
+.subfooter-container{
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
