@@ -5,7 +5,27 @@
     }
 
     .nav-links{
-        display: none;
+        /* display: none; */
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px 0;
+        transition: 1s all ease-in-out;
+        z-index: 999;
+    }
+
+    .nav-links.active{
+        left: 0;
+    }
+
+    .nav-links ul{
+        flex-direction: column;
+    }
+
+    .main-nav{
+        overflow: initial;
     }
 
     h3{
